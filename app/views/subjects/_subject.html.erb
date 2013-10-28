@@ -1,7 +1,9 @@
-<tr>
-  <td></td>
-  <td><%= subject.name %></td>
-  <td><%= subject.votes %></td>
-  <td><%= timeago(subject.updated_at) %></td>
-</tr>
+<% subjects.each do |subject| %>
+  <tr>
+    <td><%= button_to t("subject_vote_button"), vote_tracker_subject_path(tracker, subject) %></td>
+    <td><%= subject.name %></td>
+    <td><%= subject.votes %></td>
+    <td><%= timeago(subject.updated_at) %></td>
+  </tr>
+<% end %>
 

@@ -6,6 +6,10 @@ class SubjectsController < ApplicationController
     redirect_to @tracker
   end
 
+  def vote
+
+  end
+
   private
 
   def find_tracker

@@ -14,7 +14,7 @@
       </tr>
     </thead>
     <tbody>
-      <%= render @tracker.subjects %>
+      <%= render partial: "subjects/subject", locals: { subjects: @subjects, tracker: @tracker } %>
     </tbody>
   </table>
 </section>
