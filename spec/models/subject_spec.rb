@@ -7,6 +7,11 @@ describe Subject do
     }.to change(Subject, :count).by(1)
   end
 
+  it "defaults vote to 0" do
+    s = create(:subject)
+    expect(s.votes).to be 0
+  end
+
   context 'associations' do
     it { should belong_to(:tracker) }
   end

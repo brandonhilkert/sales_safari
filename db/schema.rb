@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 20131028201230) do
   create_table "subjects", force: true do |t|
     t.string   "name"
     t.integer  "tracker_id"
-    t.integer  "votes"
+    t.integer  "votes",      default: 0
     t.datetime "created_at"
     t.datetime "updated_at"
   end

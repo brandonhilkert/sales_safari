@@ -3,7 +3,7 @@ class CreateSubjects < ActiveRecord::Migration
     create_table :subjects do |t|
       t.string :name
       t.integer :tracker_id
-      t.integer :votes
+      t.integer :votes, default: 0
 
       t.timestamps
     end
