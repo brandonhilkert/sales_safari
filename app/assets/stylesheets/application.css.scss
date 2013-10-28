@@ -14,3 +14,20 @@
 
 @import "twitter/bootstrap";
 @import "font-awesome";
+
+.trackers.new {
+  text-align: center;
+
+  form {
+    margin-top: 50px;
+    display: none;
+
+    input[type="text"] {
+      height: 45px;
+      padding: 10px;
+      width: 300px;
+      border-radius: 5px;
+      border: 1px solid grey;
+    }
+  }
+}
