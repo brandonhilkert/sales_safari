@@ -9,6 +9,7 @@ class TrackersController < ApplicationController
   end
 
   def show
+    @tracker = Tracker.find_by_uniq_id(params[:id])
   end
 
   private
