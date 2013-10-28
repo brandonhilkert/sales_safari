@@ -8,7 +8,7 @@ class SubjectsController < ApplicationController
 
   def vote
     s = @tracker.subjects.find(params[:id])
-    s.increment(:votes)
+    s.increment!(:votes)
     redirect_to @tracker
   end
 
