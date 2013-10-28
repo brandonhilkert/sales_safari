@@ -14,11 +14,13 @@
 ActiveRecord::Schema.define(version: 20131028160130) do
 
   create_table "trackers", force: true do |t|
-    t.string   "name"
+    t.string   "name",       null: false
+    t.string   "uniq_id",    null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   add_index "trackers", ["name"], name: "index_trackers_on_name", unique: true
+  add_index "trackers", ["uniq_id"], name: "index_trackers_on_uniq_id", unique: true
 
 end

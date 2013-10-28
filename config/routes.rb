@@ -1,5 +1,4 @@
 SalesSafari::Application.routes.draw do
   root "trackers#new"
-
-  resources :trackers, only: [:new, :index]
+  resources :trackers, path: :t, only: [:new, :create, :show]
 end
