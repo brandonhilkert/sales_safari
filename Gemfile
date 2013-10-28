@@ -14,7 +14,7 @@ group :test do
 end
 
 group :development, :test do
-  gem 'minitest-rails'
+  gem 'rspec-rails'
   gem 'pry'
 end
 
