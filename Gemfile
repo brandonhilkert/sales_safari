@@ -11,6 +11,13 @@ group :production do
 end
 
 group :test do
+  gem 'factory_girl_rails'
+  gem 'capybara'
+  gem 'database_cleaner'
+end
+
+group :develment do
+  gem "quiet_assets"
 end
 
 group :development, :test do
@@ -27,4 +34,3 @@ gem 'unicorn'
 gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails',
                               :github => 'anjlab/bootstrap-rails'
 gem "font-awesome-rails"
-gem "quiet_assets"

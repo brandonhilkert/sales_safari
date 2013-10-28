@@ -1,4 +1,4 @@
-<button class="btn btn-default btn-lg" data-behavior="new-tracker">Create a New Tracker</button>
+<button class="btn btn-default btn-lg" data-behavior="new-tracker"><%= t("new_tracker_button") %></button>
 
 <%= form_for @tracker do |f| %>
   <%= f.text_field :name, placeholder: "Name" %>
