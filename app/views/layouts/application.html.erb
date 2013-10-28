@@ -8,7 +8,10 @@
 </head>
 <body class="<%= controller_name %> <%= action_name %>">
 
-<%= yield %>
+  <%= yield %>
 
+  <%= javascript_tag do %>
+    SalesSafari.TimeAgo.replaceTimes()
+  <% end %>
 </body>
 </html>

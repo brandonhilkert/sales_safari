@@ -13,5 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require jquery.timeago
 //= require init
 //= require behaviors
+//= require sales_safari.timeago
