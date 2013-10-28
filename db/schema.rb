@@ -11,7 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131028160130) do
+ActiveRecord::Schema.define(version: 20131028201230) do
+
+  create_table "subjects", force: true do |t|
+    t.string   "name"
+    t.integer  "tracker_id"
+    t.integer  "votes"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "subjects", ["tracker_id"], name: "index_subjects_on_tracker_id"
 
   create_table "trackers", force: true do |t|
     t.string   "name",       null: false

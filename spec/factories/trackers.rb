@@ -1,6 +1,6 @@
 FactoryGirl.define do
   factory :tracker do
-    name "new test"
+    sequence(:name) {|n| "tracker #{n}" }
   end
 end
 

@@ -1,5 +1,8 @@
 class Tracker < ActiveRecord::Base
   before_create :generate_uniq_id
+  has_many :subjects, dependent: :destroy
+
+  validates :name, presence: true
 
   def to_param
     uniq_id

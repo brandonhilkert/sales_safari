@@ -1,1 +1,8 @@
-<%= @tracker.name %>
+<h1><%= @tracker.name %></h1>
+<section>
+  <%= render partial: "subjects/form", locals: { subject: @subject, tracker: @tracker } %>
+</section>
+
+<section>
+
+</section>

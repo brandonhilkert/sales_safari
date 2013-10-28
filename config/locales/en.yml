@@ -23,3 +23,4 @@ en:
   hello: "Hello world"
   new_tracker_button: "Create a new tracker"
   new_tracker_form_button: "Get started"
+  new_subject_button: "Add subject"
