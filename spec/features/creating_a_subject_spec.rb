@@ -9,7 +9,7 @@ describe "Adding a subject" do
 
     fill_in "subject_name", with: name
     click_on t("new_subject_button")
-    expect(page).to have_content tracker.name
+    expect(page).to have_content name
   end
 end
 

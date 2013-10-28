@@ -4,5 +4,17 @@
 </section>
 
 <section>
-
+  <table class="table table-striped table-hover">
+    <thead>
+      <tr>
+        <th></th>
+        <th>Subject</th>
+        <th>Votes</th>
+        <th>Last updated</th>
+      </tr>
+    </thead>
+    <tbody>
+      <%= render @tracker.subjects %>
+    </tbody>
+  </table>
 </section>
