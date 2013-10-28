@@ -16,7 +16,7 @@ group :test do
   gem 'database_cleaner'
 end
 
-group :develment do
+group :development do
   gem "quiet_assets"
 end
 

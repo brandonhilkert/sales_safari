@@ -18,6 +18,16 @@
 .trackers.new {
   text-align: center;
 
+  section {
+    position: absolute;
+    top: 45%;
+    left: 30%;
+  }
+
+  button {
+    font-size: 3em;
+  }
+
   form {
     margin-top: 50px;
     display: none;

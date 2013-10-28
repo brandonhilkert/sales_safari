@@ -1,12 +1,13 @@
 require 'spec_helper'
 
 describe "Creating a tracker" do
-  it "loads the page" do
+  it "has a new tracker button" do
     visit root_url
-    expect(page).to have_button default_button
+    expect(page).to have_button t("new_tracker_button")
   end
 
-  def default_button
-    t("new_tracker_button")
+  it "has a get started button" do
+    visit root_url
+    expect(page).to have_button t("new_tracker_form_button")
   end
 end
