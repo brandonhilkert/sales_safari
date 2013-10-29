@@ -36,3 +36,4 @@ gem 'unicorn'
 gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails',
                               :github => 'anjlab/bootstrap-rails'
 gem "font-awesome-rails"
+gem "unicorn"
