@@ -15,29 +15,45 @@
 @import "twitter/bootstrap";
 @import "font-awesome";
 
-.trackers.new {
-  text-align: center;
+body {
+  margin: 30px;
+  font-family: Lato, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 2em;
+}
 
-  section {
-    position: absolute;
-    top: 45%;
-    left: 30%;
+button {
+  margin-top: -6px;
+}
+
+input[type="text"] {
+  height: 45px;
+  padding: 10px;
+  width: 300px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.trackers {
+  &.new {
+    text-align: center;
+
+    section {
+      position: absolute;
+      top: 35%;
+      left: 30%;
+    }
+
+    form {
+      margin-top: 50px;
+      display: none;
+
+    }
   }
 
-  button {
-    font-size: 3em;
-  }
-
-  form {
-    margin-top: 50px;
-    display: none;
-
-    input[type="text"] {
-      height: 45px;
-      padding: 10px;
-      width: 300px;
-      border-radius: 5px;
-      border: 1px solid grey;
+  &.show {
+    section {
+      margin-top: 20px;
     }
   }
 }

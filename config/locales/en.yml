@@ -21,7 +21,7 @@
 
 en:
   hello: "Hello world"
-  new_tracker_button: "Create a new tracker"
-  new_tracker_form_button: "Get started"
-  new_subject_button: "Add subject"
+  new_tracker_button: "Get started"
+  new_tracker_form_button: "create tracker"
+  new_subject_button: "add subject"
   subject_vote_button: "+1"

@@ -10,7 +10,7 @@ class TrackersController < ApplicationController
 
   def show
     @tracker = Tracker.find_by_uniq_id(params[:id])
-    @subjects = @tracker.subjects.order("id DESC")
+    @subjects = @tracker.subjects.order("votes DESC")
     @subject = Subject.new
   end
 

@@ -1,9 +1,16 @@
 <section>
-  <button class="btn btn-default btn-lg" data-behavior="new-tracker"><%= t("new_tracker_button") %></button>
+  <button class="btn btn-default btn-lg" data-behavior="new-tracker">
+    <%= t("new_tracker_button") %>
+    <i class="fa fa-arrow-right"></i>
+  </button>
 
   <%= form_for @tracker do |f| %>
-    <%= f.text_field :name, placeholder: "Name" %>
-    <%= f.submit t("new_tracker_form_button"), class: "btn btn-success btn-lg" %>
+    <%= f.text_field :name, placeholder: "name" %>
+
+    <button class="btn btn-success btn-lg">
+      <i class="fa fa-plus"></i>
+      <%= t("new_tracker_form_button") %>
+    </button>
   <% end %>
 </section>
 

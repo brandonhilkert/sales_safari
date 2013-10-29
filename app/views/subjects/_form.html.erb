@@ -1,4 +1,7 @@
 <%= form_for [tracker, subject] do |f| %>
-  <%= f.text_field :name, placeholder: "Subject" %>
-  <%= f.submit t("new_subject_button"), class: "btn btn-success" %>
+  <%= f.text_field :name %>
+  <button class="btn btn-info btn-lg">
+    <i class="fa fa-plus"></i>
+    <%= t("new_subject_button") %>
+  </button>
 <% end %>
